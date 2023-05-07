@@ -1,0 +1,72 @@
+/*Universial Selector*/
+
+* { 
+    box-sizing: border-box;
+    margin: 0px; 
+    padding: 0px; 
+}
+
+nav { 
+    background-color: steelblue;
+    padding: 18px;
+}
+nav a { 
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px; 
+}
+/*Class Selector*/
+.box { 
+    box-sizing: border-box;
+    margin: 1rem; 
+    padding: 1rem; 
+    background-color: #00ffff; /*Aqua color*/
+    color:#000;
+    width: 20em;
+}
+
+
+main img { 
+    /*positions the image at the righthand part of the page*/
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius:25%;
+    padding: 10px;
+}
+
+main ul {
+    padding: 20px;
+    padding-left: 0px;
+    width: 30em;   
+    color: steelblue;
+}
+main { 
+    padding: 20px;
+}
+main h1  {
+    color: steelblue;
+    padding-bottom: 10px; 
+}
+main h2 { 
+color: steelblue; 
+padding-top: 20px;
+}
+
+aside { 
+    position: relative;
+    width: 20em; 
+    text-align: center;
+
+}
+aside h2 { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+footer {
+margin: 1rem; 
+padding: 1rem;
+}

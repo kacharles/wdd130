@@ -1,0 +1,204 @@
+/*About us page*/
+/*Last edited on 05/05/2023*/
+
+/*Universal Styling*/
+/* Imported Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&family=Oxygen:wght@300&display=swap');
+
+/*css root declaration*/
+:root { 
+    --primary-color: #0077be; /*<!-- Blue--> */
+    --secondary-color: #ff6600; /*<!--Orange-->*/
+    --accent1-color: #ffcc00; /*<!--Yellow--> */
+    --accent2-color: #009933; /*<!--Green--> */
+  
+    --heading-font: 'Loras', serif;
+    --paragraph-font: 'Oxygen', sans-serif;
+    
+    --nav-background-color:#003366; /*<!--Dark Blue-->*/
+    --nav-link-color:#fff000; /* <!--Orange--> */
+    --nav-hover-link-color:#800080; /*<!--Purple-->*/
+    --nav-hover-background-color:#d1e0e3; /*<!--Pale Blue--> */
+
+  
+  }
+  
+  /*9573429764*/
+  
+
+
+* {
+box-sizing: border-box; 
+margin: 0px; 
+padding: 0px;
+}
+
+/*Header navigation*/
+nav { 
+background-color: var(--nav-background-color);
+width: 100%; 
+height: 200px;
+}
+
+/*Navigation Links Container*/
+
+#link {
+position: relative;
+top: 50px;
+padding: 20px;
+margin-right: 5rem;
+float: right;
+}
+
+/*White Water Rafting Logo*/
+nav #logo { 
+width: 200px; 
+height: 200px;
+float:left;
+margin-left: 10rem;
+/**background: url('..images/splash.png') no-repeat;*/
+}
+
+/*Navigation Links*/
+
+nav a {
+color: var(--nav-link-color);
+font-size: 20px;
+font-weight: bold;
+padding: 10px;
+font-family: 'Oxygen', sans-serif;
+text-decoration: none;
+}
+/*Navigation links hover effect*/
+
+#link a:hover {
+background-color: var(--nav-hover-background-color);
+color: var(--nav-hover-link-color);
+}
+/*End of header*/
+
+/*Styling the body and main content*/
+
+body {
+font-size: 16px; 
+font-family: 'Oxygen', sans-serif;
+background-color: var(--primary-color);
+color: #ffffff;
+}
+
+
+main {
+width:100%;
+}
+
+main .hero {
+width:100%;
+position:relative;
+}
+
+
+main #hero {
+top: 0px;
+width: 100%; 
+height: 30rem;
+background: url('../images/rafting13_1024.jpg') no-repeat;
+background-size: 100%;
+border-bottom: 1rem solid;
+border-bottom-color: var(--nav-background-color);
+
+
+}
+
+.hero h1 {
+position: absolute; 
+top: 20px;
+left: 28rem;
+text-transform: uppercase;
+font-family: 'Loras', serif;
+text-align: center;
+color: var(--accent1-color);
+
+}
+#hero article {
+position: absolute; 
+top: 100px; 
+left:0;
+margin:100px;
+margin-top:0px;
+}
+#hero article p {
+padding:10px; 
+font-size: 30px; 
+font-weight: bold; 
+text-align: center;
+color: white;
+padding: 15px;
+width: 70%;
+color: white;
+}
+
+#hero article img {
+float: right;
+padding-right:0px;
+width: 30%;
+height: 10%;
+border: 5px solid var(--accent1-color);
+}
+
+main section
+{
+width: 100%; 
+margin: auto;
+margin-top: 50px; 
+
+}
+main section h2 {
+text-align: center; 
+color: var(--accent1-color);
+font-family: 'Lora', serif;
+}
+
+main section p {
+text-align:center; 
+margin: 25px;
+font-family: 'Oxygen', sans-serif;
+font-size: 20px;
+font-weight: bold;
+
+}
+main section img {
+margin: 30px; 
+margin-top: 50px;
+border: 5px solid var(--accent1-color);
+
+}
+
+footer {
+width: 100%; 
+font-family: 'Oxygen', sans-serif;
+background-color: var(--nav-background-color);
+opacity: .8;
+height: 5rem;
+}
+
+footer p {
+text-align: center; 
+color: #fff;
+padding-top: 25px;
+font-weight: bold; 
+font-size: 20px;
+
+}
+
+footer nav {
+height: 50px; 
+}
+footer nav a {
+float: right;
+padding-top: 25px;
+padding-right: 30px;
+
+
+}
+

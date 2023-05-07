@@ -17,7 +17,7 @@
     --paragraph-font: 'Oxygen', sans-serif;
     
     --nav-background-color:#003366; /*<!--Dark Blue-->*/
-    --nav-link-color: #ff6600;/* <!--Orange--> */
+    --nav-link-color:#fff000; /* <!--Orange--> */
     --nav-hover-link-color:#800080; /*<!--Purple-->*/
     --nav-hover-background-color:#d1e0e3; /*<!--Pale Blue--> */
 
@@ -49,15 +49,15 @@
     text-decoration: none;
     padding: 1rem;
     display: block;
-    color: var(--nav-link--color);
+    color: var(--nav-link-color);
   }
 
   nav a:link, nav a:visited {
-    color: var(--nav-link--color)
+    /*color: var(--nav-link--color)*/
   }
 
   nav a:hover {
-    color: var(--nav-hover-color);
+    color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 
   }

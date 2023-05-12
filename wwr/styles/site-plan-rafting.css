@@ -52,7 +52,7 @@
     color: var(--nav-link-color);
   }
 
-  nav a:link, nav a:visited {
+  /* nav a:link, nav a:visited {
     /*color: var(--nav-link--color)*/
   }
 
@@ -61,5 +61,5 @@
     background-color: var(--nav-hover-background-color);
 
   }
-
+ */
 

@@ -78,6 +78,10 @@ aside {
 main .temples {
     background-color: #e6f3f3;
 }
+main .temples ul {
+    list-style-type: square;
+    color: blue;
+}
 
 
 main img { 

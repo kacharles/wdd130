@@ -16,7 +16,7 @@
     --heading-font: 'Loras', serif;
     --paragraph-font: 'Oxygen', sans-serif;
     
-    --nav-background-color:#003366; /*<!--Dark Blue-->*/
+    --nav-background-color:#000080; /*<!--Dark Blue-->*/
     --nav-link-color:#fff000; /* <!--Orange--> */
     --nav-hover-link-color:#800080; /*<!--Purple-->*/
     --nav-hover-background-color:#d1e0e3; /*<!--Pale Blue--> */
@@ -33,6 +33,11 @@
     padding: 20px; 
     background-color: var(--nav-background-color);
     
+  }
+
+  header h1 div {
+    color: #fff;
+    background-color: var(--nav-background-color);
   }
 
   p {
@@ -52,14 +57,12 @@
     color: var(--nav-link-color);
   }
 
-  /* nav a:link, nav a:visited {
-    /*color: var(--nav-link--color)*/
-  }
+  
 
   nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 
   }
- */
+ 
 

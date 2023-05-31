@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: #000080;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    
+}
+form {
+    background-color: #eeeeee;
+    border-radius: 1%;
+    max-height: max-content;
+}
+#quiz-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10%;
+    /* background-color: #eeeeee; */
+    width: 50%;
+}
+
+main h2 {
+    color: #000080;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+main h2 img {
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+form > p {
+    margin: 20px;
+    font-family: Arial;
+    color: #000080;
+    font-size: 20px;
+    font-weight: bold;
+}
+label {
+    color: black;
+    font-weight: 100;
+}
+form  input{
+    width: 100%;
+    height: 50px;
+}
+form textarea {
+    width: 100%;
+    height: 100px;
+}
+form select {
+    width: 100%;
+    height: 30px;
+}
+form #q-4 {
+    display: flex;
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    height: 45px;
+    margin-left: 100px;
+    padding: 10px;
+    align-items: center;
+}
+
+form button {
+    width: 100%;
+    background-color: #000080;
+    height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+footer p {
+    text-align: center;
+    color: #000080;
+}

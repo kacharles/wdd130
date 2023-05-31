@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "author" content = "WDD 130 | Charles Alfred Koenig" >
     <meta name="description" content="HTML FORM - User Poll" >
-    <link rel="stylesheet" href="" >
+    <link rel="stylesheet" href="styles/poll-form.css" >
   </head>
 <body>
   <header>
@@ -16,18 +16,23 @@
     <form action="">
         <fieldset>
             <legend>Contact Information</legend>
-        <label for="fullname">Full Name:</label>
-        <input id="username" name="fullname" type="text">
+        <div>
+          <label for="fullname">Full Name:</label>
+          <input id="username" name="fullname" type="text">
+        </div>
 
-        <label for="email">Email:</label>
-        <input id="useremail" type="email">
+        <div>
+          <label for="email">Email:</label>
+          <input id="useremail" type="email">
+        </div>
 
         </fieldset>
 
         <fieldset>
             <legend>Questions</legend>
-            <label for="browser">What is your favorite internet browser</label>
-            <select name="browser" id="browser">
+            <div>
+              <label for="browser">What is your favorite internet browser</label>
+              <select name="browser" id="browser">
                 <option value="chrome">Chrome</option>
                 <option value="firefox">Firefox</option>
                 <option value="safari">Safari</option>
@@ -35,10 +40,17 @@
                 <option value="brave">Brave</option>
                 <option value="other">Other</option>
             </select>
+          </div>
+
+          <div>  
             <label for="pet">Do you have a household pet?</label>
             <input type="checkbox" id="pet" name="pet" >
+          </div>
+
+          <div>
             <label for="feedback">List the places you have lived:</label>
             <textarea name="feedback" id="feedback" cols="20"  rows="4" placeholder="Sht. Bezhat Huseyin Sokak"></textarea>
+          </div>
         </fieldset>
         <button type="submit">Submit Poll</button>
  

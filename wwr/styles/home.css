@@ -318,7 +318,12 @@ font-weight: bold;
 font-size: 20px;
 font-family: 'Oxygen', sans-serif;
 }
-
+#footer p a { 
+    
+    color: var(--nav-link-color);
+    text-decoration: none;
+   
+}
 
 #footer a {
     color: var(--nav-background-color);

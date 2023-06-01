@@ -1,0 +1,326 @@
+/*About us page*/
+/*Last edited on 05/05/2023*/
+
+/*Universal Styling*/
+/* Imported Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&family=Oxygen:wght@300&display=swap');
+
+/*css root declaration*/
+:root { 
+    --primary-color: #0077be; /*<!-- Blue--> */
+    --secondary-color: #ff6600; /*<!--Orange-->*/
+    --accent1-color: #ffcc00; /*<!--Yellow--> */
+    --accent2-color: #009933; /*<!--Green--> */
+  
+    --heading-font: 'Loras', serif;
+    --paragraph-font: 'Oxygen', sans-serif;
+    
+    --nav-background-color:#003366; /*<!--Dark Blue-->*/
+    --nav-link-color:#fff000; /* <!--Orange--> */
+    --nav-hover-link-color:#800080; /*<!--Purple-->*/
+    --nav-hover-background-color:#d1e0e3; /*<!--Pale Blue--> */
+
+  
+  }
+  
+  
+/* Universal selector */
+
+
+* {
+box-sizing: border-box; 
+margin: 0px; 
+padding: 0px;
+}
+
+/*Header navigation*/
+header {
+display: grid;
+justify-content: space-around;
+grid-template-columns: 1fr auto;
+max-width: 100%;
+background-color: var(--nav-background-color);
+}
+
+/* White Water Rafting Logo */
+header #logo { 
+  width: 200px; 
+  height: 200px;
+  /* float:left; */
+  margin-left: 5rem;
+  
+  /**background: url('..images/splash.png') no-repeat;*/
+  }
+
+/* Header navigation styling */
+
+header nav { 
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+background-color: var(--nav-background-color);
+
+}
+
+
+/* navigation link Container*/
+
+#link {
+/* position: relative; */
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-right: 5rem;
+}
+
+/*Navigation menu items*/
+#link li {
+  list-style: none;
+  /* display: block; */
+  /* flex-grow: 2px; */
+  padding: 0px; 
+  /* border: 1px solid var(--nav-link-color) */
+  
+}
+
+#link li a {
+display: block;
+color: var(--nav-link-color);
+font-weight: bold;
+font-size: 16px;
+padding: 10px;
+font-family: 'Oxygen', sans-serif;
+text-decoration: none;
+}
+
+/*Navigation links hover effect*/
+
+#link li a:hover {
+background-color: var(--nav-hover-background-color);
+color: var(--nav-hover-link-color);
+text-decoration: none;
+
+}
+
+#link  .link-items {
+  width: 150px;
+  text-align: center;
+}
+/*End of header*/
+
+/*Styling the body and main content*/
+
+body {
+font-size: 16px; 
+font-family: 'Oxygen', sans-serif;
+background-color: var(--primary-color);
+color: #ffffff;
+}
+
+/* main element in the page */
+main {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-gap: 50px;
+justify-items: center;
+align-items: center;
+}
+
+/* Class with the name hero in main */
+main #hero {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 20%;
+justify-items: center;
+height: 400px;
+width: 100%;
+background: url('../images/river-wide.jpg') no-repeat; 
+background-size: 100%;
+
+}
+#hero  a { 
+    
+    display: flex;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    background-color: var(--accent2-color);
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-family: var(--heading-font);
+    
+    
+}
+
+main section { 
+    margin: 50px;
+    /* border: 2px solid black; */
+}
+main #sec1 {
+    margin-top: 0px;
+}
+
+#hero h1 { 
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+}
+#hero p { 
+    font-size: 20px; 
+    font-weight: 600; 
+    text-align: center;
+}
+
+main #sec { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    /* border: 1px solid black; */
+    width: 90%;
+    column-width: 300px;
+    grid-column-gap: 50px;
+    
+}
+
+#sec-info h2 { 
+    font-family: var(--heading-font);
+    color: var(--accent1-color); 
+    text-align: center;
+    text-transform: uppercase;
+}
+#sec-info p { 
+    text-align: center;
+    margin-top: 10px;
+}
+
+main .img-info { 
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-items: center;
+    grid-column-gap: 0px;
+
+    height: 250px;
+    margin-top: 20px;
+}
+
+.img-info div { 
+
+    width: 260px;
+    height: 210px;
+    position: relative;
+    border: 5px solid var(--accent1-color);
+    margin-top: 10px;
+}
+
+.img-info span { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff; 
+    background-color: #000;
+    opacity: .7;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    font-family: var(--heading-font);
+    font-size:  20px; 
+}
+
+main #sec1 { 
+    display: grid; 
+    /* max-width: 100%; */
+    grid-template-columns: 40% 58%;  
+    justify-items: start;
+    width: 80%;
+    /* border: 5px solid black; */
+    
+}
+
+#sec1 h3 { 
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: var(--accent1-color);
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+#sec1 p { 
+    font-size: 20px; 
+    color: white; 
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+#sec1 form{ 
+    width: 100%;
+}
+
+#sec1 input[type=text], input[type=email] { 
+    height: 50px;
+    border: 1px solid #fff;
+    padding: 10px; 
+    margin-right: 10px;
+    width: 225px;
+}
+
+#sec1 button { 
+    height: 50px;
+    background-color: var(--accent2-color); 
+    color: #000; 
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 220px;
+    border: 1px solid var(--accent2-color);
+    padding: 10px;
+    
+}
+
+#sec1 button:hover {
+    cursor: pointer;
+}
+
+
+
+footer {
+background-color: var(--nav-background-color);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 5rem;
+width: 100%;
+}
+footer #footer { 
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 0.5fr;
+  align-content: center;
+  justify-items: end;
+  width: 90%;
+  height: 3rem;
+  background-color: var(--nav-background-color);
+
+}
+#footer p {
+  padding-right: 20px;
+  color: var(--nav-link-color);
+font-weight: bold; 
+font-size: 20px;
+font-family: 'Oxygen', sans-serif;
+}
+
+
+#footer a {
+    color: var(--nav-background-color);
+}
+  

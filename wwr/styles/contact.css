@@ -155,9 +155,9 @@ main #team{
     justify-content: space-evenly; */
 }
 #emp img {
-    width: 90%;
-    height: auto;
-    max-width: 200px;
+    width: 100%;
+    height: 150px;
+    /* max-width: 450px; */
 }
 #emp figure {
     max-width: 200px;
@@ -286,7 +286,10 @@ main #user_form form {
     justify-content: center;
     background-color: var(--accent2-color);
     font-weight: bold;
-    
+    border: 1px solid var(--accent2-color);
+}
+#user_form button:hover {
+    cursor: pointer;
 }
 
 
@@ -330,6 +333,8 @@ font-family: 'Oxygen', sans-serif;
     color: var(--nav-hover-link-color)
 }
 
-
-
+#footer a {
+    color: var(--nav-background-color);
+  }
+  
 

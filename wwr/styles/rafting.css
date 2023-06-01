@@ -277,11 +277,8 @@ font-size: 20px;
 font-family: 'Oxygen', sans-serif;
 }
 
-#footer a img {
-  color: var(--accent1-color);
-}
 #footer a {
-  color: var(--accent1-color);
+  color: var(--nav-background-color);
 }
 
 
